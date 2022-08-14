@@ -33,4 +33,33 @@ Public Class EngineCode
 
     End Function
 
+    Public Function PintarGrid(ByVal dgv As DataGridView) As DataGridView
+
+        Dim n = 1
+
+        For Each row As DataGridViewRow In dgv.Rows
+            If n Mod 2 = 0 Then
+                row.DefaultCellStyle.BackColor = Color.Yellow
+            Else
+                row.DefaultCellStyle.BackColor = Color.Aquamarine
+            End If
+
+            n += 1
+        Next
+
+        Return dgv
+    End Function
+
+
+    Public Function EnumeraGrid(ByVal dgv As DataGridView) As DataGridView
+
+        If dgv IsNot Nothing Then
+            For Each r As DataGridViewRow In dgv.Rows
+                r.HeaderCell.Value = (r.Index + 1).ToString()
+            Next
+        End If
+
+        Return dgv
+    End Function
+
 End Class

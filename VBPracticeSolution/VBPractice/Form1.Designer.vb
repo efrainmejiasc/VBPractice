@@ -32,6 +32,7 @@ Partial Class Form1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -88,7 +89,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(123, 256)
+        Me.Button2.Location = New System.Drawing.Point(104, 256)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 38)
         Me.Button2.TabIndex = 6
@@ -97,7 +98,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(788, 242)
+        Me.Button3.Location = New System.Drawing.Point(788, 256)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 38)
         Me.Button3.TabIndex = 7
@@ -106,7 +107,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(707, 242)
+        Me.Button4.Location = New System.Drawing.Point(707, 256)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 38)
         Me.Button4.TabIndex = 8
@@ -115,18 +116,28 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(350, 256)
+        Me.Button5.Location = New System.Drawing.Point(292, 256)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 38)
         Me.Button5.TabIndex = 9
         Me.Button5.Text = "Probar Conexion"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(373, 256)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 38)
+        Me.Button6.TabIndex = 10
+        Me.Button6.Text = "Obtener DataTable"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(875, 355)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -156,4 +167,5 @@ Partial Class Form1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

@@ -1,4 +1,5 @@
 ﻿Imports System.Configuration
+Imports System.Data
 Imports System.Data.SqlClient
 
 Public Class EngineHelper
@@ -24,7 +25,6 @@ Public Class EngineHelper
         Return conexionStr
     End Function
 
-
     Public Function PruebaConexion() As Boolean
         Dim resultado As Boolean = False
 
@@ -39,6 +39,22 @@ Public Class EngineHelper
 
 
         Return resultado
+    End Function
+
+    Public Function GetRoles() As DataTable
+
+        Dim dt As DataTable = New DataTable()
+        Dim sql As String = "SELECT Id, Rol FROM Roles"
+
+        Using conexion
+            Dim comando As SqlCommand = New SqlCommand(sql, conexion)
+            comando.Parameters.Clear()
+            Dim dataAdaptador As SqlDataAdapter = New SqlDataAdapter(comando)
+            dataAdaptador.Fill(dt)
+        End Using
+
+        Return dt
+
     End Function
 
 End Class

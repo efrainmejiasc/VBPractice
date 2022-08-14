@@ -51,4 +51,18 @@ Public Class Form1
         MessageBox.Show("Resultado: " + Convert.ToString(resultado))
 
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+
+        Dim engineHelper As EngineHelper = New EngineHelper()
+        dgv.DataSource = engineHelper.GetRoles()
+
+        Dim engineCode As EngineCode = New EngineCode()
+        engineCode.PintarGrid(dgv)
+        engineCode.EnumeraGrid(dgv)
+
+        dgv.ClearSelection()
+
+    End Sub
+
 End Class
