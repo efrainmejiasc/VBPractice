@@ -5,6 +5,7 @@ Public Class Form1
 
         TextBox1.Text = EngineHelper.conexionStr
         TextBox2.Text = EngineHelper.secretKey
+        TextBox3.Text = EngineHelper.conexionStrDbPractice
 
     End Sub
 
@@ -41,6 +42,7 @@ Public Class Form1
         lstStr.Add("Que bien!")
 
         Dim lst2 = lstStr.FirstOrDefault()
+        Dim lst3 = lstStr.Where(Function(x) x = "Que bien!").FirstOrDefault()
 
     End Sub
 
@@ -65,4 +67,9 @@ Public Class Form1
 
     End Sub
 
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Dim form2 = New Form2()
+        form2.Show()
+        Me.Hide()
+    End Sub
 End Class

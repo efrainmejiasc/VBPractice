@@ -1,4 +1,6 @@
-﻿Imports Microsoft.VisualBasic.ApplicationServices
+﻿
+
+
 
 Namespace My
     ' The following events are available for MyApplication:
@@ -11,7 +13,7 @@ Namespace My
     ' **NEW** ApplyApplicationDefaults: Raised when the application queries default values to be set for the application.
 
     ' Example:
-    ' Private Sub MyApplication_ApplyApplicationDefaults(sender As Object, e As ApplyApplicationDefaultsEventArgs) Handles Me.ApplyApplicationDefaults
+    'Private Sub MyApplication_ApplyApplicationDefaults(sender As Object, e As ApplyApplicationDefaultsEventArgs) Handles Me.ApplyApplicationDefaults
     '
     '   ' Setting the application-wide default Font:
     '   e.Font = New Font(FontFamily.GenericSansSerif, 12, FontStyle.Regular)

@@ -1,0 +1,18 @@
+
+    Public Class Startup
+        Public Sub New(ByVal configuration As IConfiguration)
+            configuration = configuration
+        End Sub
+
+
+        Public ReadOnly Property Configuration As IConfiguration
+
+        Public Sub ConfigureServices(ByVal services As IServiceCollection)
+            services.AddScoped(Of MyAppContext, MyAppContext)()
+            services.AddDbContext(Of MyAppContext)()
+        End Sub
+
+
+    End Class
+
+Scaffold-DbContext 'Data Source=EMCSERVERHP\SQLEXPRESS;Initial Catalog=DbPractice;User Id=sa;Password=1234santiago' Microsoft.EntityFrameworkCore.SqlServer

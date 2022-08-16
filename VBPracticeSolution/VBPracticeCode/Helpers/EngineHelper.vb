@@ -18,6 +18,7 @@ Public Class EngineHelper
     End Function
 
     Public Shared conexionStr As String = ConfigurationManager.ConnectionStrings("ConexionSQL").ToString()
+    Public Shared conexionStrDbPractice As String = ConfigurationManager.ConnectionStrings("ConexionContextSQL").ToString()
     Public conexion As SqlConnection = New SqlConnection(ConfigurationManager.ConnectionStrings("ConexionSQL").ToString())
     Public Shared secretKey As String = ConfigurationManager.AppSettings("SecretKey")
 

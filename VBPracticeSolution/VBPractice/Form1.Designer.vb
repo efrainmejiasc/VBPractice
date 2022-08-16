@@ -33,6 +33,9 @@ Partial Class Form1
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -89,7 +92,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(104, 256)
+        Me.Button2.Location = New System.Drawing.Point(103, 256)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 38)
         Me.Button2.TabIndex = 6
@@ -98,7 +101,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(788, 256)
+        Me.Button3.Location = New System.Drawing.Point(423, 256)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 38)
         Me.Button3.TabIndex = 7
@@ -107,7 +110,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(707, 256)
+        Me.Button4.Location = New System.Drawing.Point(343, 256)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 38)
         Me.Button4.TabIndex = 8
@@ -116,7 +119,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(292, 256)
+        Me.Button5.Location = New System.Drawing.Point(183, 256)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 38)
         Me.Button5.TabIndex = 9
@@ -125,18 +128,46 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(373, 256)
+        Me.Button6.Location = New System.Drawing.Point(263, 256)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(75, 38)
         Me.Button6.TabIndex = 10
         Me.Button6.Text = "Obtener DataTable"
         Me.Button6.UseVisualStyleBackColor = True
         '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(801, 316)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 38)
+        Me.Button7.TabIndex = 11
+        Me.Button7.Text = "Continuar"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(123, 46)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(753, 23)
+        Me.TextBox3.TabIndex = 13
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(0, 49)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(117, 15)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Cadena de Conexion"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(875, 355)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Button7)
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
@@ -168,4 +199,7 @@ Partial Class Form1
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button6 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label3 As Label
 End Class
