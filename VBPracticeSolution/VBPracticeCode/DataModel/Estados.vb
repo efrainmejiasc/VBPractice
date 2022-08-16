@@ -4,10 +4,11 @@ Imports System.ComponentModel.DataAnnotations.Schema
 <Table("Estados")>
 Public Class Estados
 
-    <DatabaseGenerated(DatabaseGeneratedOption.Identity)>
+
     <Column(Order:=1, TypeName:="INT")>
+    <DatabaseGenerated(DatabaseGeneratedOption.Identity)>
     <Key>
-    Public Property Id As Integer
+    Public Property IdEstado As Integer
 
     <Column(Order:=2, TypeName:="VARCHAR")>
     <StringLength(50)>

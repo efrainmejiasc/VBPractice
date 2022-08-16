@@ -23,22 +23,54 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(432, 228)
+        Me.Button7.Location = New System.Drawing.Point(617, 402)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 38)
         Me.Button7.TabIndex = 12
         Me.Button7.Text = "Regresar"
         Me.Button7.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(39, 283)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 38)
+        Me.Button1.TabIndex = 13
+        Me.Button1.Text = "Guardar Usuario"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(137, 283)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 38)
+        Me.Button2.TabIndex = 14
+        Me.Button2.Text = "JSON Usuarios"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.Location = New System.Drawing.Point(-2, -1)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(694, 268)
+        Me.RichTextBox1.TabIndex = 15
+        Me.RichTextBox1.Text = ""
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(505, 267)
+        Me.ClientSize = New System.Drawing.Size(690, 440)
+        Me.Controls.Add(Me.RichTextBox1)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Button7)
         Me.Name = "Form2"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -48,4 +80,7 @@ Partial Class Form2
     End Sub
 
     Friend WithEvents Button7 As Button
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class
