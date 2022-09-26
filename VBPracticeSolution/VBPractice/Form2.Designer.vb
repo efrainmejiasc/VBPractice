@@ -26,6 +26,7 @@ Partial Class Form2
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button7
@@ -63,11 +64,21 @@ Partial Class Form2
         Me.RichTextBox1.TabIndex = 15
         Me.RichTextBox1.Text = ""
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(578, 283)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 38)
+        Me.Button3.TabIndex = 16
+        Me.Button3.Text = "HTTP Request"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(690, 440)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -83,4 +94,5 @@ Partial Class Form2
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents RichTextBox1 As RichTextBox
+    Friend WithEvents Button3 As Button
 End Class

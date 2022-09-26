@@ -41,4 +41,12 @@ Public Class Form2
         Dim strUsuario As String = JsonConvert.SerializeObject(usuarios)
         RichTextBox1.Text = strUsuario
     End Sub
+
+    Private Async Sub Button3_ClickAsync(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim funcion = New ProccessCode()
+
+        Dim respuesta = Await funcion.RequestGetHttpAsync()
+        RichTextBox1.Text = respuesta
+
+    End Sub
 End Class
