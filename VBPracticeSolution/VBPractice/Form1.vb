@@ -72,4 +72,16 @@ Public Class Form1
         form2.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Dim form3 = New Form3()
+        form3.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        Dim form4 = New Form4()
+        form4.Show()
+        Me.Hide()
+    End Sub
 End Class

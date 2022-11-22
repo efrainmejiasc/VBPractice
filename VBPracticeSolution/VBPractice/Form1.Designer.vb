@@ -36,6 +36,8 @@ Partial Class Form1
         Me.Button7 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -137,11 +139,11 @@ Partial Class Form1
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(801, 316)
+        Me.Button7.Location = New System.Drawing.Point(513, 317)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(75, 38)
         Me.Button7.TabIndex = 11
-        Me.Button7.Text = "Continuar"
+        Me.Button7.Text = "FORM2"
         Me.Button7.UseVisualStyleBackColor = True
         '
         'TextBox3
@@ -160,11 +162,31 @@ Partial Class Form1
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Cadena de Conexion"
         '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(594, 317)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(75, 38)
+        Me.Button8.TabIndex = 14
+        Me.Button8.Text = "XML"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(675, 317)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(75, 38)
+        Me.Button9.TabIndex = 15
+        Me.Button9.Text = "SMTP"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(875, 355)
+        Me.Controls.Add(Me.Button9)
+        Me.Controls.Add(Me.Button8)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button7)
@@ -202,4 +224,6 @@ Partial Class Form1
     Friend WithEvents Button7 As Button
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button9 As Button
 End Class

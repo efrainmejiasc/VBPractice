@@ -1,6 +1,7 @@
 ﻿Imports System.Globalization
 Imports Newtonsoft.Json
 Imports VBPracticeCode
+Imports VBPracticeCode.EngineEnum
 
 Public Class Form2
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -48,5 +49,9 @@ Public Class Form2
         Dim respuesta = Await funcion.RequestGetHttpAsync()
         RichTextBox1.Text = respuesta
 
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        RichTextBox1.Text = Convert.ToInt32(NumEnum.Uno)
     End Sub
 End Class
